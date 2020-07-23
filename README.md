@@ -34,16 +34,16 @@ To evaluate the pre-trained models:
 
 
 ```
-python eval_vessels.py --model vlight --modelname {drive,chase,hrf}_vlight --dataset {drive,chase,hrf}
+python eval_vessels.py --model vlight --modelname models/pretrained/{drive,chase,hrf}_vlight --dataset {drive,chase,hrf}
 ```
 
 
 ## Training
 
-To train VLight on DRIVE for 40 epochs with a learning rate of 0.0001, for exmple, run:
+To train VLight on DRIVE for 40 epochs (80k samples) with a learning rate of 0.001, for example, run:
 
 ```
-python train_vessels.py --sessionname drive_vlight --lr 0.0001 -e 40 --dataset-train drive --dataset-val drive 
+python train_vessels.py --sessionname drive_vlight --lr 0.001 -e 40 --dataset-train drive --dataset-val drive 
 ```
 
 
